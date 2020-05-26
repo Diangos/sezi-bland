@@ -1,0 +1,10 @@
+@import 'colors';
+
+.btn-primary {
+    background-color: $main-color;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: $main-color-lighter;
+}

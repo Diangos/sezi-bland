@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import 'styles/responsive-breakpoints';
+@import 'styles/theme';
+@import 'styles/colors';
+
+body {
+    font-family: "Barlow", sans-serif;
+    background-color: #F2F2F2;
+}
+
+a {
+    color: $main-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $main-color-lighter;
+    text-decoration: underline;
+}
+
+.container, .container-fluid {
+    background-color: white;
+}
+
+main {
+    margin: auto -15px;
+}
+
+.nav-separator {
+    border: 1px solid #999999;
+}
+
+/** XS */
+@media only screen and (max-width: $breakpoint-bootstrap-xs) {
+    .nav-separator {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/** bigger than XS (SM, MD, LG) */
+@media only screen and (min-width: $breakpoint-bootstrap-xs) {
+    .nav-separator {
+        align-self: center;
+        margin: auto 10px;
+        height: 19px;
+    }
+}
+

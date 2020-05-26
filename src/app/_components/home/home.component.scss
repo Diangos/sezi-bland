@@ -1,0 +1,58 @@
+@import "src/styles/responsive-breakpoints";
+
+.guideWrapper {
+    background: linear-gradient(
+            to left,
+            rgba(255, 214, 137, 0) 0%,
+            rgba(255, 214, 137, 1) 600px,
+            rgba(255, 214, 137, 1) 100%),
+        url("/assets/images/virus.jpg") no-repeat right 25%;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: 60px 50px;
+
+    .guideDescription {
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 30px;
+            max-width: 30rem;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-bootstrap-md) {
+    .guideWrapper {
+        background: linear-gradient(
+                to left,
+                rgba(255, 214, 137, 0.5) 0%,
+                rgba(255, 214, 137, 1) 400px,
+                rgba(255, 214, 137, 1) 100%),
+        url("/assets/images/virus.jpg") no-repeat right 25%;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-bootstrap-sm) {
+    .guideWrapper {
+        background: linear-gradient(
+                to left,
+                rgba(255, 214, 137, 0.7) 0%,
+                rgba(255, 214, 137, 1) 80%,
+                rgba(255, 214, 137, 1) 100%),
+        url("/assets/images/virus.jpg") no-repeat right 25%;
+    }
+}
+
+.descriptionWrapper {
+    h2 {
+        margin-top: 0;
+    }
+
+    .description {
+        padding: 40px 50px 400px 50px;
+    }
+}
